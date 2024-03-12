@@ -51,7 +51,7 @@ public class VendaController {
 		}
 	}
 	
-	@PutMapping("/updade/{id}")
+	@PutMapping("/update/{id}")
 	public ResponseEntity<String> update(@PathVariable long id, @RequestBody Venda venda){
 		try {
 			this.vendaService.update(id, venda);

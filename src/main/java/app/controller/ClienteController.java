@@ -51,7 +51,7 @@ public class ClienteController {
 		}
 	}
 	
-	@PutMapping("/updade/{id}")
+	@PutMapping("/update/{id}")
 	public ResponseEntity<String> update(@PathVariable long id, @RequestBody Cliente cliente){
 		try {
 			this.clienteService.update(id, cliente);
